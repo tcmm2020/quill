@@ -80,7 +80,7 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quilljs/quill"
+    "url": "https://github.com/tcmm2020/quill"
   },
   "bugs": {
     "url": "https://github.com/quilljs/quill/issues"
@@ -160,7 +160,8 @@
     "test:functional": "./_develop/scripts/puppeteer.sh",
     "test:unit": "npm run build; karma start _develop/karma.config.js",
     "test:coverage": "webpack --env.coverage --config _develop/webpack.config.js; karma start _develop/karma.config.js --reporters coverage",
-    "travis": "npm run lint && karma start _develop/karma.config.js --reporters dots,saucelabs"
+    "travis": "npm run lint && karma start _develop/karma.config.js --reporters dots,saucelabs",
+    "prepare": "npm run build:webpack"
   },
   "keywords": [
     "editor",
